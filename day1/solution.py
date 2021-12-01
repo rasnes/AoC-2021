@@ -7,7 +7,7 @@ nums = [int(s) for s in lines_str]
 
 def count_increases(nums):
     increase_count = 0
-    for i, num in enumerate(nums):
+    for i, _ in enumerate(nums):
         if i == 0:
             continue
         
