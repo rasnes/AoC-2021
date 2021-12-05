@@ -19,7 +19,6 @@ coords_straight = [t for t in all_coords if straight_check(t[0], t[1])]
 coords_diag = [t for t in all_coords if not straight_check(t[0], t[1])]
 
 def create_map(coords, straight=True, size=1000):
-    # TODO: mistake is in this function somehow.
     arrs = np.zeros((len(coords), size, size), dtype=np.int8)
     for i, ((x1, y1), (x2, y2)) in enumerate(coords):
         if straight:
