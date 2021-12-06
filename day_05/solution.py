@@ -8,8 +8,8 @@ with open("input_test.txt") as f:
 
 # Clean input data
 input = lines_str
-def tup_split(s, sep=" -> ", straight=True):
-    ss = s.split(sep=sep)
+def tup_split(s):
+    ss = s.split(" -> ")
     start, stop = sorted([int(c) for c in s.split(",")] for s in ss)
     return start, stop
 
